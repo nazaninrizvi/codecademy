@@ -1,0 +1,49 @@
+body {
+  font-family: Helvetica;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+  margin: auto;
+  text-align: center;
+}
+
+form {
+  line-height: 27px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+.welcome{
+  background-image: url("mixedMessages-background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 700px;
+  max-width: 1200px;
+  margin: 40px auto;
+  display: flex;
+}
+
+
+#top {
+  background-color: rgb(255, 255, 255);
+  margin: 2% 10%;
+  border-radius: 15px;
+}
+
+#top img {
+  display: block;
+  width: 35%;
+  margin: 0 auto;
+}
+
+.italics {
+  font-style: italic;
+}
+
+.word {
+  font-weight: bold;
+  text-decoration: underline;
+}

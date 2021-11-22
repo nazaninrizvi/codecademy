@@ -1,0 +1,27 @@
+body {
+    font-family: Helvetica;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+    margin: auto;
+    text-align: center;
+  }
+
+.welcome{
+    background-image: url("handshake-emoji-by-google.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 700px;
+    max-width: 1200px;
+    margin: 40px auto;
+    display: flex;
+  }
+  
+.text-over{
+    margin: auto;
+    width: 100%;
+    background-color: black;
+  }
+
+  

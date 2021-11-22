@@ -1,0 +1,25 @@
+body {
+    font-family: Helvetica;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+    margin: auto;
+    text-align: center;
+  }
+
+.welcome{
+    background-image: url("pinkheart.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;
+    max-width: 1200px;
+    margin: 40px auto;
+    display: flex;
+  }
+  
+.text-over{
+    margin: auto;
+    width: 100%;
+    background-color: black;
+  }

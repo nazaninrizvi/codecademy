@@ -1,0 +1,46 @@
+<!<!DOCTYPE html>
+<html>
+<head>
+  <title>Perfect date generator</title>
+  <link rel="stylesheet" href="stylesheet.css" type="text/css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="text/javascript" src="./index.js"></script>
+</head>
+<body>
+  <h1>Perfect date generator</h1>
+  <div>
+    <form action="results.html" method="GET">
+      <label for="seasons">What time of year?</label>
+      <select id="seasons" name="seasons">
+        <option value="summer">Summer</option>
+        <option value="autumn">Autumn</option>
+        <option value="winter">Winter</option>
+        <option value="spring">Spring</option>
+      </select>
+  </div>
+
+  <div>
+    <label for="time">During the day or night?</label>
+    <select name="time">
+      <option value="surpTime">Surprise me</option>
+      <option value="day">Day date</option>
+      <option value="night">Night</option>
+    </select>
+  </div>
+      
+  <div>
+    <label for="group">"Finally, is it just the two of you, or as a group?"</label>
+    <select id="group" name="group">
+      <option value="surpGroup">Surprise me</option>
+      <option value="no">Just us</option>
+      <option value="yes">We're going with others!</option>
+    </select>
+  </div>
+
+<hr>
+ <input type="submit" value="Submit">
+  </form>
+</body>
+<footer>
+</footer>
+</html>

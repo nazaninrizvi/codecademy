@@ -1,0 +1,47 @@
+body {
+  font-family: Helvetica;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+  margin: auto;
+  text-align: center;
+}
+
+form {
+  line-height: 27px;
+}
+
+.welcome{
+  background-image: url("mixedMessages-background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 700px;
+  max-width: 1200px;
+  margin: 40px auto;
+  display: flex;
+}
+
+.text-over{
+  margin: auto;
+  width: 100%;
+  background-color: black;
+}
+
+.submitButton{
+  .box{
+    height: 300px;
+    padding: 20px;
+    margin-bottom: auto;
+    flex-basis: 30%;
+    box-sizing: border-box;
+    background-color: black;
+    opacity: 0.8;
+  }  
+}
+
+footer{
+  display: block;
+  float: left;
+  padding-left: 20px;
+}

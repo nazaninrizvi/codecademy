@@ -1,0 +1,68 @@
+<!<!DOCTYPE html>
+<html>
+<head>
+  <title>Perfect date generator</title>
+  <link rel="stylesheet" href="./stylesheet.css" type="text/css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="text/javascript" src="./index.js"></script>
+</head>
+<body>
+  <h1>Perfect date generator</h1>
+  <form action="" method="POST">
+    <label for="seasons">What time of year?</label>
+    <select name="seasons">
+      <option value="summer">Summer</option>
+      <option value="autumn">Autumn</option>
+      <option value="winter">Winter</option>
+      <option value="spring">Spring</option>
+    </select>
+
+    <hr>
+
+    <label for="time">During the day or night?</label>
+    <select name="time">
+      <option value="day">Day date</option>
+      <option value="autumn">Autumn</option>
+      <option value="winter">Winter</option>
+      <option value="spring">Spring</option>
+    </select>
+
+
+  
+  <div class="seasonDropdown">
+    <button onclick="myFunction()" class="dropbtn">Season</button>
+    <div id="seasDropdown" class="dropdown-content">
+      <a href="#summer">Summer</a>
+      <a href="#autumn">Autumn</a>
+      <a href="#winter">Winter</a>
+      <a href="#spring">Spring</a>
+    </div>
+  </div>
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+<label for="vehicle1"> Surprise me!</label><br>
+  <div class="timeOfDayDropdown">
+    <button onclick="myFunction()" class="dropbtn">Time of day</button>
+    <div id="timeDropdown" class="dropdown-content">
+      <a href="#daytime">Daytime</a>
+      <a href="#night">Night time</a>
+    </div>
+  </div>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+  <label for="vehicle2"> Surprise me!</label><br>
+  <div class="groupSizeDropdown">
+    <button onclick="myFunction()" class="dropbtn">Going in a group or just the two of you?</button>
+    <div id="sizeDropdown" class="dropdown-content">
+      <a href="#justUs">Just us</a>
+      <a href="#group">Group date</a>
+    </div>
+  </div>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+<label for="vehicle3"> Surprise me!</label><br><br>
+
+<hr>
+ <input type="submit" value="Submit">
+  </form>
+</body>
+<footer>
+</footer>
+</html>

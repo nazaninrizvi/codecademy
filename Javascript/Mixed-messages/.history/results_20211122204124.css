@@ -1,0 +1,10 @@
+.welcome{
+    background-image: url("mixedMessages-background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 700px;
+    max-width: 1200px;
+    margin: 40px auto;
+    display: flex;
+  }
+<img src="handshake-emoji-by-google.png" alt="Form A Story Logo">

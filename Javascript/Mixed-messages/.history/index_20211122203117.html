@@ -1,0 +1,58 @@
+<!<!DOCTYPE html>
+<html>
+<head>
+  <title>Perfect date generator</title>
+  <link rel="stylesheet" href="stylesheet.css" type="text/css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="text/javascript" src="./index.js"></script>
+</head>
+<body>
+  <div id="welcome-message">
+    <div class="welcome">
+      <div class="text-over">
+        <h1>Perfect date generator</h1>
+      </div>
+    </div>    
+  </div>  
+
+  <div id="form-chunk">
+    <div class="forms">
+      <div>
+        <form action="results.html" method="GET">
+          <label for="seasons">What time of year?</label>
+          <select id="seasons" name="seasons" required>
+            <option value="summer">Summer</option>
+            <option value="autumn">Autumn</option>
+            <option value="winter">Winter</option>
+            <option value="spring">Spring</option>
+          </select>
+      </div>
+          <br>
+      <div>
+        <label for="time">During the day or night?</label>
+        <select name="time" id="time" required>
+          <option value="day">Day date</option>
+          <option value="night">Night</option>
+        </select>
+      </div>
+          <br>
+      <div>
+        <label for="group">"Finally, is it just the two of you, or as a group?"</label>
+        <select id="group" name="group" required>
+          <option value="no">Just us</option>
+          <option value="yes">We're going with others!</option>
+        </select>
+      </div>
+    </div>  
+  </div>    
+
+<hr>
+  <div class="submitButton">
+     <input type="submit" value="Submit">
+</div>
+  </form>
+</body>
+<footer>
+  <p>The perfect date generator created by Nazanin Rizvi 2021</p>
+</footer>
+</html>
