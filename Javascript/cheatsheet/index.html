@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <title>HTML Forms</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <h1>HTML Forms</h1>
+        <p> HTML forms are used to gain some sort of input from the user, and use this information in some
+            way. Examples of form types are input fields, checkboxes, radio buttons, and dropdown menus. 
+        </p>
+        <p>Basic elements of a form:</p>
+        <table>
+            <thead>
+                <th scope= 'col'>Tag </th>
+                <th scope= 'col'>Name </th>
+                <th scope= 'col'>Description </th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="#form-tag">&lt;form&gt;</a></td>
+                    <td>Form</td>
+                    <td>The wrapper element for all HTML forms. By default the form will submit to the same
+                         HTML page </td>
+                </tr>
+                <tr>
+                    <td><a href="#input-tag">&lt;input&gt;</a></td>
+                    <td>Input</td>
+                    <td>Used to define which type of input is required of the form. Self closing tags</td>
+                </tr>
+                <tr>
+                    <td><a href="#label-tag">&lt;label&gt;</a></td>
+                    <td>Label</td>
+                    <td>Defines a label for many form elements. These are used as input is self-closing, so 
+                        they give the user some context
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Submit</td>
+                    <td>We need some way to submit the form, common practice uses buttons </td>
+                </tr>
+            </tbody>
+        </table>
+            
+        <h2 id="form-tag">Form tag attributes</h2>
+        <table>
+            <thead>
+                <th scope= 'col'>Attribute</th>
+                <th scope='col'>Description</th>
+                <th scope="col">Example</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>action</td>
+                    <td>
+                        In order for the data in the form to go somewhere other than the page we're already
+                        on, the form needs to be <i>actionable</i>. The action attribute links the form to 
+                        something which will process the data
+                    </td>
+                    <td 
+                        class="examples">&lt;form<span style="color: #E78F8D"> action="results.html"
+                        </span> &gt;
+                    </td>
+                </tr>
+                <tr>
+                    <td>method</td>
+                    <td>
+                        Either going to be <b>GET</b> or <b>POST</b>. With a GET request, the entries are
+                         appended to the url and sent to another page on your site. POST requests are 
+                         useful when you have a server, however browsers cannot render POST requests, 
+                         therefore if you don't have a server, you can only use GET.
+                    </td>
+                    <td class="examples">
+                        &lt;form action="results.html" <span style="color: #E78F8D"> method: GET</span> 
+                        &gt; 
+                        <br>or<br>
+                        &lt;form action="results.html" <span style="color: #E78F8D"> method: POST</span> 
+                        &gt;
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2 id="input-tag">Input tag attributes</h2>
+        <p>
+            To make an input tag element necessary for the user to complete before the form can be
+            submitted, you can add the <i>required</i> attribute to these tags before closing them!
+            <span style="color: #346C9E">Note: for the input tag we will need to assign all types a name 
+            and an id in order for the webpage receiving the action to actually read the data. We will use 
+            the id and name "example" in the following examples. We also need the name and id so that we 
+            can link these tags to our label tags.</span>
+            
+        </p>
+        <table>
+            <thead>
+                <th scope='col'>Input type</th>
+                <th scope='col'>Description</th>
+                <th scope='col'>Example</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="#tbox">&lt;input type="text"&gt;</a></td>
+                    <td>Single line text field</td>
+                    <td class="examples">&lt;input type="text" name="example" id="example"&gt;</td>
+                </tr>
+                <tr>
+                    <td><a href="#cbox">&lt;input type="checkbox"&gt;</a></td>
+                    <td>
+                        Displays a checkbox. You can have select one or more checkboxes at once.
+                        You need a label per checkbox
+                    </td>
+                    <td class="examples">&lt;input type="checkbox" name="example" id="example"&gt;</td>
+                </tr>
+                <tr>
+                    <td><a href="#radioEx">&lt;input type="radio"</a></td>
+                    <td>
+                        Displays a radio button. You can only select one radio button at a time. You need
+                        a label per radio button. This is done by only having one shared name across the
+                        radio elements 
+                    </td>
+                    <td class="examples">
+                        &lt;input type="radio" name="example" id="example1" value="example1"&gt;
+                        &lt;input type="radio" name="example" id="example2" value="example2"&gt;
+                    </td>
+                </tr>
+                <tr>
+                    <td><a href="#dropbox">&lt;select&gt;&lt;/select&gt;</a></td>
+                    <td>
+                        While this isn't strictly input, they still allow you to gain a selection from the
+                        user, so I'm including this here. It is used as a dropdown selection menu. The 
+                        individual options are simply <br>
+                        <span 
+                            style="color: #CBE1F1">&lt;option value="example"&gt;Example&lt;/option&gt;
+                        </span>.
+                    </td>
+                    <td class="examples">&lt;select name="example" id="example"&gt;&lt;/select&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;input type="submit"&gt;</td>
+                    <td>This defines a button for submitting the form data to a form-handler.</td>
+                    <td>&lt;input type="submit" value="submit"&gt</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2 id="label-tag">Labels</h2>
+        <table>
+            <thead>
+                <th scope="col">Input type</th>
+                <th scope='col'>Description</th>
+                <th scope='col'>Example</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>&lt;label&gt;</td>
+                    <td>
+                        Defines many form elements as most have no closing tags. They're also useful for
+                        screen-readers. The <b>for</b> attribute should be equal to the id of the relevant
+                        input element.
+                    </td>
+                    <td class="examples">&lt;label for="example"&gt;</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Examples</h2>
+        <form>
+            <div id="tbox">
+                <label for="example-text">Example textbox</label>
+                <input type="text" name="example-text" id="example-text">
+            </div>        
+            <br>
+            <div id="cbox">
+                <label for="example-checkbox1">Example checkbox 1</label>
+                <input type="checkbox" name="example-checkbox1" id="example-checkbox1">
+                <label for="example-checkbox1">Example checkbox 2</label>
+                <input type="checkbox" name="example-checkbox2" id="example-checkbox2">
+                <label for="example-checkbox1">Example checkbox 3</label>
+                <input type="checkbox" name="example-checkbox3" id="example-checkbox3">
+            </div>
+            <br>
+            <div id="radioEx">
+                <label for="example-radio1">Example radio 1</label>
+                <input type="radio" name="example-radio" id="example-radio1" value="example-radio1">
+                <label for="example-radio2">Example radio 2</label>
+                <input type="radio" name="example-radio" id="example-radio2" value="example-radio2">
+                <label for="example-radio1">Example radio 3</label>
+                <input type="radio" name="example-radio" id="example-radio3" value="example-radio3">
+            </div>
+            <br>
+            <div id="dropdown">
+                <label for="dropEx">Dropdown</label>
+                <select id="dropEx" name="dropEx">
+                    <option value="ex1">Example 1</option>
+                    <option value="ex2">Example 2</option>
+                </select>
+            </div>
+        </form>
+    </body>
+</html>
