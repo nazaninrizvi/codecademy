@@ -1,0 +1,80 @@
+
+
+.colors-container{
+    height: 300px;
+    max-width: 1200px;
+    margin: 40px auto auto auto;
+    border: 1px solid black;
+  }
+  
+  .colcontainer{
+    max-width: 1050px;
+    margin: 15px auto auto auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .cols{
+    height: 300px;
+    padding: 20px;
+    margin-bottom: auto;
+    flex-basis: 30%;
+    box-sizing: border-box;
+    opacity: 0.8;
+  }
+
+#coolblue{
+    background-color: #bed1e9;
+  }
+#testBlue{
+    background-color: #E4EBF3;
+}  
+#pastelPurple{
+    background-color: #B2BCE8;
+}    
+
+#pistachio{
+    background-color: #CAE4D7;
+}
+
+#brown{
+    background-color: #9B736D;
+}
+
+#inkBlue{
+    background-color: #BFBFCA;
+}
+
+.fontcontainer{
+  height: 300px;
+  max-width: 1200px;
+  margin: 40px auto auto auto;
+  border: 1px solid black;
+
+
+max-width: 1050px;
+margin: 15px auto auto auto;
+display: flex;
+justify-content: space-between;
+}
+
+.fonts{
+  height: 300px;
+  padding: 20px;
+  margin-bottom: auto;
+  flex-basis: 30%;
+  box-sizing: border-box;
+  opacity: 0.8;
+}
+
+#montserrat{
+  font-family: 'Montserrat', sans-serif;
+}
+
+#nanum{
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+#sourceSerif{
+  font-family: 'Source Serif Pro', serif;
+}
